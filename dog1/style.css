@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dog1 .container {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid rgb(159, 19, 163);
+    background-color: rgb(163, 24, 163);
+    border-radius: 20px;
+}
+
+.dog1 .bubble1 {
+    width: 360px;
+    height: 360px;
+    background-color: rgb(202, 148, 208);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* .dog1*/ .bubble1:before, /*.dog1*/ .bubble:after { 
+    content: '';
+    width: 120px;
+    height: 120px;
+    background-color: inherit;
+    border-radius: inherit;
+    position: inherit;
+}
+/* .dog1 */ .bubble1:before {
+    right: -40px;
+    top: 20px;
+    background-color: rgb(202, 148, 208);
+}
+/* .dog1 */.bubble1:after { 
+    bottom: -30px;
+    left: 40px;
+    transform: scale(1.4);
+    background-color: rgb(202, 148, 208);
+}
+
+.dog1 .bubble2 {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(202, 148, 208);
+    border-radius: 50%;
+    position: absolute;
+    right: 170px;
+    top: 80px;
+}
+.dog1 .bubble2::after, .bubble2::before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: inherit;
+    position: inherit;
+}
+.dog1 .bubble2::before {
+    left: -330px;
+    bottom: -320px;
+    background-color: rgb(202, 148, 208);
+    transform: scale(1.5);
+}
+.dog1 .bubble2::after {
+    left: -85px;
+    bottom: -410px;
+    background-color: rgb(202, 148, 208);
+    transform: scale(0.8);
+}
+
+.dog1 .face {
+    height: 90px;
+    width: 220px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    margin: auto;
+    z-index: 1;
+    overflow: hidden;
+}
+.dog1 .face::after {
+    left: 0;
+    bottom: 55px;
+}
+
+.dog1 .head {
+    height: 120px;
+    width: 170px;
+    background-color: rgb(177, 177, 177);
+    border-radius: 70px 70px 0 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 55px;
+    margin: auto;
+    overflow: hidden;
+}
+.dog1 .head::after {
+    left: -25px;
+    bottom: -30px;
+}
+
+/*.dog1 .face::after,*/ .dog1 .head::after {
+    content: '';
+    top: 40px;
+    left: 15px;
+    height: 63px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: rgb(254, 250, 241);
+    position: absolute;
+}
+
+.dog1 .eyes {
+    height: 16px;
+    width: 16px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 140px;
+    bottom: 215px;
+    z-index: 1;
+    box-shadow: 65px 0 #000;
+    animation: blink 3s infinite linear;
+}
+@keyframes blink {
+    5% {
+        transform: scaleY(0.1);
+    }
+    15% {
+        transform: scaleY(1);
+    }
+}
+
+.dog1 .nose {
+    height: 24px;
+    width: 44px;
+    background-color: #000;
+    border-radius: 20% 20% 50% 50% / 25% 25% 70% 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 145px;
+    margin: auto;
+    z-index: 3;
+}
+.dog1 .nose::before {
+    content: '';
+    height: 10px;
+    width: 24px;
+    background-color: rgb(41, 4, 4);
+    border-radius: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4px;
+    margin: auto;
+}
+.dog1 .nose::before {
+    content: '';
+    height: 10px;
+    width: 24px;
+    background-color: rgb(68, 16, 16);
+    border-radius: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4px;
+    margin: auto;
+}
+
+.dog1 .tongue {
+    height: 40px;
+    width: 36px;
+    background-color: #d40000;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 75px;
+    margin: auto;
+    z-index: 1;
+}
+.dog1 .tongue::before {
+    content: '';
+    height: 36px;
+    width: 3px;
+    background-color: rgb(219, 34, 34);
+    border-radius: 10px;
+    position: inherit;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.dog1 .ear {
+    position: absolute;
+    background-color: #808080;
+    z-index: 1;
+}
+.dog1 .ear::before, .dog1 .ear::after {
+    content: '';
+    position: inherit;
+    background-color: inherit;
+}
+.dog, .dog1 .ear::before, .dog1 .ear::after {
+    height: 50px;
+    width: 50px;
+    border-top-right-radius: 30%;
+}
+.dog1 .ear{
+    transform: rotate(-60deg) skewX(-30deg) scale(1, .866);
+}
+.dog1 .ear:before{
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+.dog1 .ear:after{
+    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+.dog1 .ear-left{
+    position: absolute;
+    left: 130px;
+    top: 70px;
+    transform: rotate(130deg);
+    z-index: 1;
+}
+.dog1 .ear-right{
+    position: absolute;
+    right: 100px;
+    top: 95px;
+    transform: rotate(-160deg);
+    z-index: 1;
+}

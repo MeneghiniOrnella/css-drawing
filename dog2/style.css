@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dog2 {
+    background-color: rgb(249, 249, 179);
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog-body {
+    position: relative;
+}
+
+.head {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    position: absolute;
+}
+
+.nose {
+    height: 70px;
+    width: 160px;
+    top: -70px;
+    right: 60px;
+    position: relative;
+    border-top: 0 solid transparent;
+    border-bottom: 70px solid #ce4b26;
+    border-radius: 100%;
+}
+
+.nose2 {
+    height: 20px;
+    width: 40px;
+    top: -160px;
+    right: 70px;
+    position: relative;
+    border-top: 0 solid transparent;
+    border-bottom: 20px solid #110803;
+    border-radius: 100%;
+}
+
+.eye {
+    height: 10px;
+    width: 10px;
+    top: -172px;
+    left: 30px;
+    position: relative;
+    background-color: #110803;
+    border-radius: 100%;
+}
+
+.ear {
+    height: 75px;
+    width: 55px;
+    top: -190px;
+    left: 45px;
+    position: relative;
+    background-color: #803018;
+    border-bottom-left-radius: 80%;
+}
+
+.collar {
+    height: 20px;
+    width: 110px;
+    top: 100px;
+    right: 5px;
+    position: relative;
+    background-color: #ffa01d;
+}
+
+.body {
+    position: relative;
+    height: 70px;
+    width: 320px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.body1 {
+    height: 70px;
+    width: 140px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-top: 0 solid transparent;
+    border-bottom: 70px solid #ce4b26;
+    border-radius: 100%;
+}

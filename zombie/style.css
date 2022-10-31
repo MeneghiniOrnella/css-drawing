@@ -1,0 +1,119 @@
+* {
+    margin: 1.5em;
+    padding: 0;
+}
+
+body {
+    background: rgb(129,207,23);
+    background: radial-gradient(circle, rgba(129,207,23,1) 0%, rgba(235,252,70,1) 100%);
+}
+
+.head1 {
+    position: absolute;
+    background-color:#6A8776;
+    height: 20em;
+    width: 20em;
+    border: 4px solid rgb(67, 67, 67);
+    /* border-bottom-radius: 3em;
+    border-top-radius: 10em; */
+    border-radius: 10em 10em 5em 5em;
+    position: relative;
+}
+.head2 {
+    position: relative;
+    background-color:#A2B99C;
+    height: 15em;
+    width: 15em;
+    border-radius: 5em 5em 22% 20%;
+    bottom: 25vh;
+    /* top: auto; */
+    left: 6vh;
+    z-index: -1;
+    border: 4px solid rgb(67, 67, 67);
+}
+
+.eye1, .eye2 {
+    position: relative;
+    background-color: #F8ECB6;
+    height: 6em;
+    width: 6em;
+    border-radius: 50% 56% 52% 54%;
+    z-index: 99;
+    border: 4px solid rgb(67, 67, 67);
+}
+.eye1 {
+    bottom: 66vh;
+    left: 6vh;
+}
+.eye2 {
+    bottom: 84vh;
+    left: 26vh;
+    height: 7em;
+    width: 7em;
+}
+.eye {
+    position: relative;
+    background-color: #000000;
+    height: 1em;
+    width: 1em;
+    border-radius: 50% 56% 52% 54%;
+    bottom: -7vh;
+    z-index: 99;
+}
+
+.nose1, .nose2 {
+    position: relative;
+    background-color: rgb(67, 67, 67);
+    border-radius: 50% 56% 52% 54%;
+    z-index: 999;
+}
+.nose1 {
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50% 56% 52% 54%;
+    bottom: 88vh;
+    left: 19vh;
+}
+.nose2 {
+    height: 2.4em;
+    width: 1.4em;
+    border-radius: 9% 92% 100%;
+    bottom: 98vh;
+    left: 24vh;
+}
+
+.mounth {
+    position: relative;
+    background-color: rgb(139, 29, 29);
+    border: 4px solid rgb(67, 67, 67);
+    height: 6em;
+    width: 14em;
+    z-index: 999;
+    bottom: 100vh;
+    left: 7vh;
+    border-radius: 50% 30% 60% 70%;
+}
+.teeth1, .teeth2, .teeth3, .teeth4 {
+    position: relative;
+    background-color: #E8EEBD;
+    border: 4px solid rgb(67, 67, 67);
+    height: 1.6em;
+    width: 2em;
+    z-index: 9999;
+    bottom: 4vh;
+    left: 15vh;
+    /* border-radius: 50% 30% 60% 70%; */
+}
+.teeth2 {
+    bottom: 12vh;
+    left: 4vh;
+}
+.teeth3 {
+    bottom: 11vh;
+    left: 3vh;
+}
+.teeth4 {
+    top: -19vh;
+    left: 20vh;
+}
+
